@@ -2,12 +2,12 @@ import { ProductPriceSizeDto } from './product-price-size.dto';
 import { ProductModifiersDto } from './product-modifiers.dto';
 import { ProductGroupModifierDto } from './product-group-modifier.dto';
 
-export enum ProductType {
+export declare enum ProductType {
   PRODUCT = `Product`,
   COMPOUND = `Compound`,
 }
 
-export class ProductDto {
+export declare class ProductDto {
   fatAmount?: number;
 
   proteinsAmount?: number;

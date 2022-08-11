@@ -3,7 +3,7 @@ import { ProductSizesDto } from './product-sizes.dto';
 import { ProductCategoriesDto } from './product-categories.dto';
 import { ProductDto } from './product.dto';
 
-export class ProductsListDto {
+export declare class ProductsListDto {
   correlationId: string;
 
   groups: Array<ProductGroupsDto>;

@@ -1,6 +1,6 @@
 import { ProductPriceDto } from './product-price.dto';
 
-export class ProductPriceSizeDto {
+export declare class ProductPriceSizeDto {
   sizeId: string;
 
   price: ProductPriceDto;

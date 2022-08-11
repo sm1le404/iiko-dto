@@ -1,6 +1,6 @@
 import { ProductModifiersDto } from './product-modifiers.dto';
 
-export class ProductGroupModifierDto {
+export declare class ProductGroupModifierDto {
   id: string;
 
   minAmount: number;

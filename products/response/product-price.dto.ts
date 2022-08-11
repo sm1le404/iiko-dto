@@ -1,4 +1,4 @@
-export class ProductPriceDto {
+export declare class ProductPriceDto {
   currentPrice: number;
 
   isIncludedInMenu: boolean;

@@ -1,4 +1,4 @@
-export class ProductModifiersDto {
+export declare class ProductModifiersDto {
   id: string;
 
   defaultAmount?: number;

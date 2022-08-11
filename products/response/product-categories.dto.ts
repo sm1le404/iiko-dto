@@ -1,4 +1,4 @@
-export class ProductCategoriesDto {
+export declare class ProductCategoriesDto {
   id: string;
 
   name: string;

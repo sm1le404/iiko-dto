@@ -1,4 +1,4 @@
-export class ProductGroupsDto {
+export declare class ProductGroupsDto {
   imageLinks: Array<string>;
 
   parentGroup?: string;
