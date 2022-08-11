@@ -2,8 +2,13 @@
   "name": "iiko-dto",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": ["Postilla app"],
