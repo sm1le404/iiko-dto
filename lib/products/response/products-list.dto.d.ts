@@ -9,4 +9,5 @@ export declare class ProductsListDto {
     products: Array<ProductDto>;
     sizes: Array<ProductSizesDto>;
     revision: number;
+    organizationId?: string;
 }
