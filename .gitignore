@@ -1,6 +1,8 @@
 # compiled output
-/lib
 /node_modules
+
+# TypeScript incremental compilation cache
+*.tsbuildinfo
 
 # Logs
 logs
