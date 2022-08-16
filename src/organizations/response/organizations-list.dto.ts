@@ -4,4 +4,6 @@ export declare class OrganizationsListDto {
   correlationId: string;
 
   organizations: Array<OrganizationDto>;
+
+  partnerId?: string;
 }

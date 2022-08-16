@@ -4,4 +4,6 @@ export class TerminalsListDto {
   correlationId: string;
 
   terminalGroups: Array<TerminalGroupDto>;
+
+  partnerId?: string;
 }

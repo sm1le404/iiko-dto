@@ -17,4 +17,6 @@ export declare class ProductsListDto {
   revision: number;
 
   organizationId?: string;
+
+  partnerId?: string;
 }
