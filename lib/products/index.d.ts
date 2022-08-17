@@ -1,4 +1,5 @@
 export * from './request/get-products.dto';
+export * from './request/get-stops.dto';
 export * from './response/product.dto';
 export * from './response/product-categories.dto';
 export * from './response/product-group-modifier.dto';
@@ -7,3 +8,6 @@ export * from './response/product-price.dto';
 export * from './response/product-price-size.dto';
 export * from './response/product-sizes.dto';
 export * from './response/products-list.dto';
+export * from './response/stop-list.dto';
+export * from './response/terminal-groups-stops.dto';
+export * from './response/terminal-single-group-stops.dto';
