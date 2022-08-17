@@ -4,4 +4,6 @@ export declare class StopListDto {
   correlationId: string;
 
   terminalGroupStopLists: Array<TerminalGroupsStopsDto>;
+
+  partnerId?: string;
 }
