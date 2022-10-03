@@ -21,13 +21,13 @@ declare class Order {
     status: 'Unconfirmed' | 'WaitCooking' | 'ReadyForCooking' | 'CookingStarted' | 'CookingCompleted' | 'Waiting' | 'OnWay' | 'Delivered' | 'Closed' | 'Cancelled';
     cancelInfo?: CancelInfo;
     courierInfo?: CourierInfo;
-    completeBefore: Date;
-    whenCreated: Date;
-    whenConfirmed?: Date;
-    whenPrinted?: Date;
-    whenCookingCompleted?: Date;
-    whenSended?: Date;
-    whenDelivered?: Date;
+    completeBefore: string;
+    whenCreated: string;
+    whenConfirmed?: string;
+    whenPrinted?: string;
+    whenCookingCompleted?: string;
+    whenSended?: string;
+    whenDelivered?: string;
     comment?: string;
     problem?: Problem;
     operator?: Operator;
@@ -104,7 +104,7 @@ declare class Customer {
     gender: string;
     inBlacklist: boolean;
     blacklistReason: string;
-    birthdate: Date;
+    birthdate: string;
 }
 declare class DeliveryPoint {
     coordinates: Coordinates;

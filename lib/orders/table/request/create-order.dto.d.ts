@@ -31,7 +31,7 @@ declare class Customer {
     name?: string;
     surname?: string;
     comment?: string;
-    birthdate?: Date;
+    birthdate?: string;
     email?: string;
     shouldReceivePromoActionsInfo?: boolean;
     shouldReceiveOrderStatusNotifications?: boolean;

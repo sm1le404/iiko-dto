@@ -58,7 +58,7 @@ declare class Customer {
     gender: string;
     inBlacklist: boolean;
     blacklistReason: string;
-    birthdate: Date;
+    birthdate: string;
 }
 declare class Discount {
     discountType: DiscountType;

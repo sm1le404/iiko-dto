@@ -49,19 +49,19 @@ class Order {
 
   courierInfo?: CourierInfo;
 
-  completeBefore: Date;
+  completeBefore: string;
 
-  whenCreated: Date;
+  whenCreated: string;
 
-  whenConfirmed?: Date;
+  whenConfirmed?: string;
 
-  whenPrinted?: Date;
+  whenPrinted?: string;
 
-  whenCookingCompleted?: Date;
+  whenCookingCompleted?: string;
 
-  whenSended?: Date;
+  whenSended?: string;
 
-  whenDelivered?: Date;
+  whenDelivered?: string;
 
   comment?: string;
 
@@ -199,7 +199,7 @@ class Customer {
 
   blacklistReason: string;
 
-  birthdate: Date;
+  birthdate: string;
 }
 
 class DeliveryPoint {

@@ -107,7 +107,7 @@ class Customer {
 
   blacklistReason: string;
 
-  birthdate: Date;
+  birthdate: string;
 }
 
 class Discount {

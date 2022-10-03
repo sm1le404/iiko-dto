@@ -7,7 +7,7 @@ class Order {
 
   externalNumber?: string;
 
-  completeBefore?: Date;
+  completeBefore?: string;
 
   phone: string;
 
@@ -65,7 +65,7 @@ class Customer {
 
   comment?: string;
 
-  birthdate?: Date;
+  birthdate?: string;
 
   email?: string;
 

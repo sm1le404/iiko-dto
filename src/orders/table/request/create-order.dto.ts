@@ -57,7 +57,7 @@ class Customer {
 
   comment?: string;
 
-  birthdate?: Date;
+  birthdate?: string;
 
   email?: string;
 
