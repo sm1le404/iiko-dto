@@ -15,11 +15,11 @@ class Payment {
 
   paymentTypeId: string;
 
-  isProcessedExternally: boolean;
+  isProcessedExternally?: boolean;
 
-  paymentAdditionalData: PaymentAdditionalData;
+  paymentAdditionalData?: PaymentAdditionalData;
 
-  isFiscalizedExternally: boolean;
+  isFiscalizedExternally?: boolean;
 
   tipsTypeId?: string;
 }

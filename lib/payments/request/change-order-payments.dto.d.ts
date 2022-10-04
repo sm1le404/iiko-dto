@@ -8,9 +8,9 @@ declare class Payment {
     paymentTypeKind: string;
     sum: number;
     paymentTypeId: string;
-    isProcessedExternally: boolean;
-    paymentAdditionalData: PaymentAdditionalData;
-    isFiscalizedExternally: boolean;
+    isProcessedExternally?: boolean;
+    paymentAdditionalData?: PaymentAdditionalData;
+    isFiscalizedExternally?: boolean;
     tipsTypeId?: string;
 }
 declare class PaymentAdditionalData {
