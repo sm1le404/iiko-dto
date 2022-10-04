@@ -17,3 +17,5 @@ export * from './table/request/create-order.dto';
 export * from './table/request/close-order.dto';
 export * from './table/response/closer-order-response.dto';
 export * from './table/response/create-order-response.dto';
+export * from './deliveries/request/get-allowed-delivery.dto';
+export * from './deliveries/response/response-allowed-delivery.dto';
