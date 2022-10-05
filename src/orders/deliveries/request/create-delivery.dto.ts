@@ -76,7 +76,7 @@ class Customer {
   gender?: 'NotSpecified' | 'Male' | 'Female';
 }
 
-class DeliveryPoint {
+export class DeliveryPoint {
   coordinates?: Coordinates;
 
   address?: Address;

@@ -41,7 +41,7 @@ declare class Customer {
     shouldReceiveOrderStatusNotifications?: boolean;
     gender?: 'NotSpecified' | 'Male' | 'Female';
 }
-declare class DeliveryPoint {
+export declare class DeliveryPoint {
     coordinates?: Coordinates;
     address?: Address;
     externalCartographyId?: string;
