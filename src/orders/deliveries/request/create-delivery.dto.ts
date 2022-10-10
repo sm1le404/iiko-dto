@@ -195,7 +195,7 @@ class ComboInformation {
 }
 
 class Payment {
-  paymentTypeKind: 'Cash' | 'Card' | 'IikoCard' | 'External';
+  paymentTypeKind: string;
 
   sum: number;
 

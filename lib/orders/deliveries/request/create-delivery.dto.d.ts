@@ -114,7 +114,7 @@ declare class ComboInformation {
     comboGroupId: string;
 }
 declare class Payment {
-    paymentTypeKind: 'Cash' | 'Card' | 'IikoCard' | 'External';
+    paymentTypeKind: string;
     sum: number;
     paymentTypeId: string;
     isProcessedExternally?: boolean;
