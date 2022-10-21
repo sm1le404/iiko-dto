@@ -27,7 +27,7 @@ declare class OrderItem {
     amount: number;
     modifiers?: ModificatorItem[];
 }
-export interface OrderLocation {
+interface OrderLocation {
     latitude: number;
     longitude: number;
 }

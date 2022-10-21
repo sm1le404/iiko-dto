@@ -18,7 +18,8 @@ class Item {
   externalRevision?: number;
 }
 
-export interface OrderTypesResponseDto {
+export class OrderTypesResponseDto {
   correlationId: string;
+
   orderTypes: OrderType[];
 }

@@ -48,7 +48,7 @@ class OrderItem {
   modifiers?: ModificatorItem[];
 }
 
-export interface OrderLocation {
+interface OrderLocation {
   latitude: number;
   longitude: number;
 }

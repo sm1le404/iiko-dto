@@ -50,21 +50,21 @@ export class ResponseCustomerInfoDto {
   isDeleted: boolean;
 }
 
-export interface Card {
+interface Card {
   id: string;
   track: string;
   number: string;
   validToDate: Date;
 }
 
-export interface Category {
+interface Category {
   id: string;
   name: string;
   isActive: boolean;
   isDefaultForNewGuests: boolean;
 }
 
-export interface WalletBalance {
+interface WalletBalance {
   id: string;
   name: string;
   type: number;

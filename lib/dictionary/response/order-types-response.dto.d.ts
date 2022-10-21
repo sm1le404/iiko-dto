@@ -10,7 +10,7 @@ declare class Item {
     isDeleted?: boolean;
     externalRevision?: number;
 }
-export interface OrderTypesResponseDto {
+export declare class OrderTypesResponseDto {
     correlationId: string;
     orderTypes: OrderType[];
 }
