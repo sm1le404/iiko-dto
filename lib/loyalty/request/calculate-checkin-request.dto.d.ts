@@ -92,12 +92,22 @@ interface IikoCard5Info {
     coupon: string;
     applicableManualConditions: string[];
 }
-interface Item {
-    type: string;
+interface Modifier {
+    productId: string;
     amount: number;
-    productSizeId: string;
-    comboInformation: ComboInformation;
-    comment: string;
+    price?: number;
+    positionId?: string;
+}
+interface Item {
+    type: 'Product' | 'Compound';
+    amount: number;
+    productSizeId?: string;
+    productId: string;
+    price?: number;
+    comboInformation?: ComboInformation;
+    comment?: string;
+    positionId?: string;
+    modifiers?: Modifier[];
 }
 interface ComboInformation {
     comboId: string;
