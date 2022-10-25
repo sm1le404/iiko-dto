@@ -27,7 +27,7 @@ class Order {
 
   operatorId?: string;
 
-  items: Item[];
+  items: BasketDeliveryItem[];
 
   combos?: Combo[];
 
@@ -166,7 +166,7 @@ class Modifier {
   positionId?: string;
 }
 
-class Item {
+export class BasketDeliveryItem {
   type: 'Product' | 'Compound';
 
   amount: number;

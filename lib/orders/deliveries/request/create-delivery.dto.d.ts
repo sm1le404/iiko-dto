@@ -14,7 +14,7 @@ declare class Order {
     guests?: Guests;
     marketingSourceId?: string;
     operatorId?: string;
-    items: Item[];
+    items: BasketDeliveryItem[];
     combos?: Combo[];
     payments?: Payment[];
     tips?: Payment[];
@@ -97,7 +97,7 @@ declare class Modifier {
     price?: number;
     positionId?: string;
 }
-declare class Item {
+export declare class BasketDeliveryItem {
     type: 'Product' | 'Compound';
     amount: number;
     productSizeId?: string;
