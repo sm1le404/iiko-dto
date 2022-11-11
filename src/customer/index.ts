@@ -5,3 +5,7 @@ export * from './request/get-customer-info.dto';
 export * from './response/response-customer.dto';
 export * from './response/response-customer-info.dto';
 export * from './response/response-customer-hold-money.dto';
+export * from './request/get-customers-category.dto';
+export * from './request/set-customer-category.dto';
+export * from './request/remove-customer-category.dto';
+export * from './response/response-customer-category.dto';
