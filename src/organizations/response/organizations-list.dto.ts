@@ -6,4 +6,6 @@ export declare class OrganizationsListDto {
   organizations: Array<OrganizationDto>;
 
   partnerId?: string;
+
+  franchiseId?: string;
 }
