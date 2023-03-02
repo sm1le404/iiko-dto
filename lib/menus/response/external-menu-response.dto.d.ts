@@ -4,7 +4,7 @@ export declare class ExternalMenuResponseDto {
     description: string;
     itemCategories: ItemCategory[];
 }
-export declare class ItemCategory {
+declare class ItemCategory {
     items: ItemCategoryItem[];
     id: number;
     name: string;

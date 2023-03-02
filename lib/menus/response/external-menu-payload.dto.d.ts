@@ -1,9 +1,5 @@
-import { ItemCategory } from "./external-menu-response.dto";
-export declare class ExternalMenuPayloadDto {
-    id: number;
-    name: string;
-    description: string;
-    itemCategories: ItemCategory[];
+import { ExternalMenuResponseDto } from "./external-menu-response.dto";
+export declare class ExternalMenuPayloadDto extends ExternalMenuResponseDto {
     organizationId?: string;
     partnerId?: string;
 }
