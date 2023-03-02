@@ -7,3 +7,4 @@ export * from './orders/index';
 export * from './payments/index';
 export * from './customer/index';
 export * from './loyalty/index';
+export * from './menus/index';
