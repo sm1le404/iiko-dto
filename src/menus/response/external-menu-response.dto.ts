@@ -5,7 +5,7 @@ export class ExternalMenuResponseDto {
     itemCategories:  ItemCategory[];
 }
 
-class ItemCategory {
+export class ItemCategory {
     items:          ItemCategoryItem[];
     id:             number;
     name:           string;
@@ -14,7 +14,7 @@ class ItemCategory {
     headerImageUrl: string;
 }
 
-class ItemCategoryItem {
+export class ItemCategoryItem {
     itemSizes:        ItemSize[];
     sku:              string;
     name:             string;
@@ -26,13 +26,13 @@ class ItemCategoryItem {
     orderItemType:    string;
 }
 
-class AllergenGroup {
+export class AllergenGroup {
     id:   string;
     code: string;
     name: string;
 }
 
-class ItemSize {
+export class ItemSize {
     prices:                   Price[];
     itemModifierGroups:       ItemModifierGroup[];
     sku:                      string;
@@ -46,7 +46,7 @@ class ItemSize {
     buttonImageCroppedUrl:    string[];
 }
 
-class ItemModifierGroup {
+export class ItemModifierGroup {
     items:                                ItemModifierGroupItem[];
     name:                                 string;
     description:                          string;
@@ -57,7 +57,7 @@ class ItemModifierGroup {
     sku:                                  string;
 }
 
-class ItemModifierGroupItem {
+export class ItemModifierGroupItem {
     prices:                   Price[];
     sku:                      string;
     name:                     string;
@@ -71,27 +71,27 @@ class ItemModifierGroupItem {
     itemId:                   string;
 }
 
-class NutritionPerHundredGrams {
+export class NutritionPerHundredGrams {
 }
 
-class Price {
+export class Price {
     organizationId: string;
     price:          number;
 }
 
-class Restrictions {
+export class Restrictions {
     minQuantity:  number;
     maxQuantity:  number;
     freeQuantity: number;
     byDefault:    number;
 }
 
-class Tag {
+export class Tag {
     id:   string;
     name: string;
 }
 
-class TaxCategory {
+export class TaxCategory {
     id:         string;
     name:       string;
     percentage: number;
