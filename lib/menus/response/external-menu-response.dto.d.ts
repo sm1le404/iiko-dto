@@ -11,6 +11,7 @@ export declare class ItemCategory {
     description: string;
     buttonImageUrl: string;
     headerImageUrl: string;
+    iikoGroupId: string | number;
 }
 export declare class ItemCategoryItem {
     itemSizes: ItemSize[];
@@ -21,7 +22,14 @@ export declare class ItemCategoryItem {
     itemId: string;
     modifierSchemaId: string;
     taxCategory: TaxCategory;
-    orderItemType: string;
+    orderItemType: "Product" | "Compound";
+    tags: Tag[];
+    labels: string[];
+    modifierSchemaName: string;
+    canBeDivided: boolean;
+    canSetOpenPrice: boolean;
+    useBalanceForSell: boolean;
+    measureUnit: string;
 }
 export declare class AllergenGroup {
     id: string;
@@ -65,6 +73,11 @@ export declare class ItemModifierGroupItem {
     itemId: string;
 }
 export declare class NutritionPerHundredGrams {
+    fats: number;
+    proteins: number;
+    carbs: number;
+    energy: number;
+    organizations: string[];
 }
 export declare class Price {
     organizationId: string;

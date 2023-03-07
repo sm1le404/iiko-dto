@@ -12,18 +12,26 @@ export class ItemCategory {
     description:    string;
     buttonImageUrl: string;
     headerImageUrl: string;
+    iikoGroupId:    string | number;
 }
 
 export class ItemCategoryItem {
-    itemSizes:        ItemSize[];
-    sku:              string;
-    name:             string;
-    description:      string;
-    allergenGroups:   AllergenGroup[];
-    itemId:           string;
-    modifierSchemaId: string;
-    taxCategory:      TaxCategory;
-    orderItemType:    string;
+    itemSizes:          ItemSize[];
+    sku:                string;
+    name:               string;
+    description:        string;
+    allergenGroups:     AllergenGroup[];
+    itemId:             string;
+    modifierSchemaId:   string;
+    taxCategory:        TaxCategory;
+    orderItemType:      "Product" | "Compound";
+    tags:               Tag[];
+    labels:             string[];
+    modifierSchemaName: string;
+    canBeDivided:       boolean;
+    canSetOpenPrice:    boolean;
+    useBalanceForSell:  boolean;
+    measureUnit:        string;
 }
 
 export class AllergenGroup {
@@ -72,6 +80,11 @@ export class ItemModifierGroupItem {
 }
 
 export class NutritionPerHundredGrams {
+    fats: number;
+    proteins: number;
+    carbs: number;
+    energy: number;
+    organizations: string[];
 }
 
 export class Price {
