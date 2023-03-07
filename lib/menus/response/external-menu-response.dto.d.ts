@@ -4,15 +4,16 @@ export declare class ExternalMenuResponseDto {
     description: string;
     itemCategories: ItemCategory[];
 }
-declare class ItemCategory {
+export declare class ItemCategory {
     items: ItemCategoryItem[];
     id: number;
     name: string;
     description: string;
     buttonImageUrl: string;
     headerImageUrl: string;
+    iikoGroupId: string | number;
 }
-declare class ItemCategoryItem {
+export declare class ItemCategoryItem {
     itemSizes: ItemSize[];
     sku: string;
     name: string;
@@ -21,14 +22,21 @@ declare class ItemCategoryItem {
     itemId: string;
     modifierSchemaId: string;
     taxCategory: TaxCategory;
-    orderItemType: string;
+    orderItemType: "Product" | "Compound";
+    tags: Tag[];
+    labels: string[];
+    modifierSchemaName: string;
+    canBeDivided: boolean;
+    canSetOpenPrice: boolean;
+    useBalanceForSell: boolean;
+    measureUnit: string;
 }
-declare class AllergenGroup {
+export declare class AllergenGroup {
     id: string;
     code: string;
     name: string;
 }
-declare class ItemSize {
+export declare class ItemSize {
     prices: Price[];
     itemModifierGroups: ItemModifierGroup[];
     sku: string;
@@ -41,7 +49,7 @@ declare class ItemSize {
     buttonImageUrl: string;
     buttonImageCroppedUrl: string[];
 }
-declare class ItemModifierGroup {
+export declare class ItemModifierGroup {
     items: ItemModifierGroupItem[];
     name: string;
     description: string;
@@ -51,7 +59,7 @@ declare class ItemModifierGroup {
     childModifiersHaveMinMaxRestrictions: boolean;
     sku: string;
 }
-declare class ItemModifierGroupItem {
+export declare class ItemModifierGroupItem {
     prices: Price[];
     sku: string;
     name: string;
@@ -64,25 +72,29 @@ declare class ItemModifierGroupItem {
     tags: Tag[];
     itemId: string;
 }
-declare class NutritionPerHundredGrams {
+export declare class NutritionPerHundredGrams {
+    fats: number;
+    proteins: number;
+    carbs: number;
+    energy: number;
+    organizations: string[];
 }
-declare class Price {
+export declare class Price {
     organizationId: string;
     price: number;
 }
-declare class Restrictions {
+export declare class Restrictions {
     minQuantity: number;
     maxQuantity: number;
     freeQuantity: number;
     byDefault: number;
 }
-declare class Tag {
+export declare class Tag {
     id: string;
     name: string;
 }
-declare class TaxCategory {
+export declare class TaxCategory {
     id: string;
     name: string;
     percentage: number;
 }
-export {};

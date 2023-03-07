@@ -5,34 +5,42 @@ export class ExternalMenuResponseDto {
     itemCategories:  ItemCategory[];
 }
 
-class ItemCategory {
+export class ItemCategory {
     items:          ItemCategoryItem[];
     id:             number;
     name:           string;
     description:    string;
     buttonImageUrl: string;
     headerImageUrl: string;
+    iikoGroupId:    string | number;
 }
 
-class ItemCategoryItem {
-    itemSizes:        ItemSize[];
-    sku:              string;
-    name:             string;
-    description:      string;
-    allergenGroups:   AllergenGroup[];
-    itemId:           string;
-    modifierSchemaId: string;
-    taxCategory:      TaxCategory;
-    orderItemType:    string;
+export class ItemCategoryItem {
+    itemSizes:          ItemSize[];
+    sku:                string;
+    name:               string;
+    description:        string;
+    allergenGroups:     AllergenGroup[];
+    itemId:             string;
+    modifierSchemaId:   string;
+    taxCategory:        TaxCategory;
+    orderItemType:      "Product" | "Compound";
+    tags:               Tag[];
+    labels:             string[];
+    modifierSchemaName: string;
+    canBeDivided:       boolean;
+    canSetOpenPrice:    boolean;
+    useBalanceForSell:  boolean;
+    measureUnit:        string;
 }
 
-class AllergenGroup {
+export class AllergenGroup {
     id:   string;
     code: string;
     name: string;
 }
 
-class ItemSize {
+export class ItemSize {
     prices:                   Price[];
     itemModifierGroups:       ItemModifierGroup[];
     sku:                      string;
@@ -46,7 +54,7 @@ class ItemSize {
     buttonImageCroppedUrl:    string[];
 }
 
-class ItemModifierGroup {
+export class ItemModifierGroup {
     items:                                ItemModifierGroupItem[];
     name:                                 string;
     description:                          string;
@@ -57,7 +65,7 @@ class ItemModifierGroup {
     sku:                                  string;
 }
 
-class ItemModifierGroupItem {
+export class ItemModifierGroupItem {
     prices:                   Price[];
     sku:                      string;
     name:                     string;
@@ -71,27 +79,32 @@ class ItemModifierGroupItem {
     itemId:                   string;
 }
 
-class NutritionPerHundredGrams {
+export class NutritionPerHundredGrams {
+    fats: number;
+    proteins: number;
+    carbs: number;
+    energy: number;
+    organizations: string[];
 }
 
-class Price {
+export class Price {
     organizationId: string;
     price:          number;
 }
 
-class Restrictions {
+export class Restrictions {
     minQuantity:  number;
     maxQuantity:  number;
     freeQuantity: number;
     byDefault:    number;
 }
 
-class Tag {
+export class Tag {
     id:   string;
     name: string;
 }
 
-class TaxCategory {
+export class TaxCategory {
     id:         string;
     name:       string;
     percentage: number;
