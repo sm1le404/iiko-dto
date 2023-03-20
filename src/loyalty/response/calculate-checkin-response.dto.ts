@@ -41,11 +41,12 @@ interface GroupMapping {
 }
 
 interface Discount {
-  code: number;
-  orderItemId: string;
+  code: DiscountCode;
+  orderItemId?: string;
+  positionId?: string;
   discountSum: number;
-  amount: number;
-  comment: string;
+  amount?: number;
+  comment?: string;
 }
 
 interface FreeProduct {
@@ -64,4 +65,11 @@ interface Upsale {
   sourceActionId: string;
   suggestionText: string;
   productCodes: string[];
+}
+
+export enum DiscountCode {
+  FIXED_DISCOUNT_FOR_THE_ENTIRE_ORDER = 1,
+  FIXED_DISCOUNT_FOR_THE_ITEM = 2,
+  FREE_PRODUCT = 3,
+  OTHER_TYPE_OF_DISCOUNTS = 4,
 }
