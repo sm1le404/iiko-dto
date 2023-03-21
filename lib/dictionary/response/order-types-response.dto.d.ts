@@ -1,4 +1,4 @@
-type ServiceOrderType = 'Common' | 'DeliveryByCourier' | 'DeliveryPickUp';
+declare type ServiceOrderType = 'Common' | 'DeliveryByCourier' | 'DeliveryPickUp';
 declare class OrderType {
     organizationId: string;
     items: Item[];
